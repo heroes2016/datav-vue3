@@ -41,10 +41,10 @@ const props = defineProps({
 const pointSideLength = 7
 const decoration3 = ref<HTMLElement | null>(null)
 const state = reactive({
-  svgWH: [300, 35],
+  svgWH: [600, 70],
   svgScale: [1, 1],
-  rowNum: 2,
-  rowPoints: 25,
+  rowNum: 5,
+  rowPoints: 50,
   pointSideLength,
   halfPointSideLength: pointSideLength / 2,
   points: [] as number[][],

@@ -10,11 +10,13 @@
 </template>
 
 <script setup lang="ts">
+import {ref} from 'vue'
 import { BorderBox1 as DvBorderBox1 } from '@kjgl77/datav-vue3'
 const borderRef = ref<InstanceType<typeof DvBorderBox1>>()
-let width = $ref(40)
+let width = ref<any>(40)
 const handelClick = ()=>{
   width += 2
   borderRef.value?.initWH()
 }
 </script>
+
