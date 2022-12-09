@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { BorderBox2 as DvBorderBox2 } from '@kjgl77/datav-vue3'
+import { BorderBox2 as DvBorderBox2 } from '@heroes2016/yike'
 let width = $ref(20)
 const borderRef = ref<InstanceType<typeof DvBorderBox2>>()
 

@@ -1,7 +1,7 @@
 {
-  "name": "@kjgl77/docs",
+  "name": "@heroes2016/docs",
   "version": "1.0.0",
-  "description": "datav-vue3 docs",
+  "description": "yike docs",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vitepress dev docs",
@@ -16,6 +16,6 @@
     "vitepress": "1.0.0-alpha.13"
   },
   "dependencies": {
-    "@kjgl77/datav-vue3": "workspace:*"
+    "@heroes2016/yike": "workspace:*"
   }
 }

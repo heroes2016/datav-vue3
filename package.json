@@ -1,17 +1,20 @@
 {
-  "name": "datav-vue3-monorepo",
-  "version": "0.1.7",
+  "name": "@heroes2016/yike",
+  "version": "1.0.0",
   "description": "Datav for vue3+vite",
   "packageManager": "pnpm@6.32.3",
   "license": "MIT",
-  "private": "true",
-  "homepage": "https://github.com/vaemusic/datav-vue3",
+  "private": false,
+  "homepage": "https://github.com/heroes2016/yike",
+  "main": "./dist/yike.es.js",
+  "module": "./dist/yike.es.js",
+  "types": "./dist/packages/yike/index.d.ts",
   "scripts": {
-    "dev": "pnpm run --filter @kjgl77/docs docs:dev",
-    "dev:docs": "pnpm run --filter @kjgl77/docs dev",
+    "dev": "pnpm run --filter @heroes2016/docs docs:dev",
+    "dev:docs": "pnpm run --filter @heroes2016/docs dev",
     "build:docs": "pnpm run build:lib && pnpm run build",
-    "build": "pnpm run --filter @kjgl77/docs build",
-    "build:lib": "pnpm run --filter @kjgl77/datav-vue3 build:lib",
+    "build": "pnpm run --filter @heroes2016/docs build",
+    "build:lib": "pnpm run --filter @heroes2016/yike build:lib",
     "gen": "node ./script/genNewComp/index.js",
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
@@ -46,9 +49,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vaemusic/datav-vue3.git"
+    "url": "git+https://github.com/heroes2016/yike.git"
   },
   "bugs": {
-    "url": "https://github.com/vaemusic/datav-vue3/issues"
+    "url": "https://github.com/heroes2016/yike/issues"
   }
 }

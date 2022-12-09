@@ -13,10 +13,10 @@ hero:
       link: http://datav.jiaminghi.com/
     - theme: alt
       text: Github
-      link: https://github.com/vaemusic/datav-vue3
+      link: https://github.com/vaemusic/yike
     - theme: alt
       text: Gitee
-      link: https://gitee.com/kjgl77/datav-vue3
+      link: https://gitee.com/kjgl77/yike
 
 features:
   - icon: ⚡️

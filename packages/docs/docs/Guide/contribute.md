@@ -33,7 +33,7 @@ pnpm run build:lib
 ├── build              - vite 配置文件
 ├── script             - 生成组件基础代码及文档的脚本
 ├── packages
-│   ├── datav-vue3     - 组件源码
+│   ├── yike     - 组件源码
 │   ├── docs           - 文档
 ```
 
@@ -55,7 +55,7 @@ pnpm run build:lib
 ```sh
 .
 ├── packages
-│   ├── datav-vue3
+│   ├── yike
 │   │   ├── components
 │   │   │   ├── 组件英文名目录
 │   │   │   │   ├── src

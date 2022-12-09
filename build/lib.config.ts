@@ -9,9 +9,9 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     lib: {
-      entry: resolve(__dirname, '../packages/datav-vue3/index.ts'),
-      name: '@kjgl/datav-vue3',
-      fileName: format => `datav-vue3.${format}.js`,
+      entry: resolve(__dirname, '../packages/yike/index.ts'),
+      name: '@heroes2016/yike',
+      fileName: format => `yike.${format}.js`,
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖

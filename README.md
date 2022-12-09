@@ -1,41 +1,25 @@
 # DataV Vue3+TS+Vite版
 
-[![Author](https://img.shields.io/badge/Author-kjgl77-red.svg "Author")](https://github.com/vaemusic "Author")       [![LICENSE](https://img.shields.io/github/license/vaemusic/datav-vue3 "LICENSE")](https://github.com/vaemusic/datav-vue3/blob/master/LICENSE "LICENSE")
+[![Author](https://img.shields.io/badge/Author-heroes2016-brightgreen "Author")](https://github.com/heroes2016 "Author") 
 
-[![NPM](https://nodei.co/npm/@kjgl77/datav-vue3.png?mini=true)](https://www.npmjs.com/package/@kjgl77/datav-vue3)
+[![NPM](https://nodei.co/npm/@heroes2016/yike.png?mini=true)](https://www.npmjs.com/package/@heroes2016/yike)
 
-本库来源自 [DataV-Team/DataV](https://github.com/DataV-Team/DataV)，另外，大佬的 [DataV-Vue3](https://github.com/DataV-Team/DataV-Vue3) 项目也已经在开发中了，地址：https://github.com/DataV-Team/DataV-Vue3
-
-
-由于之前大佬写的 [DataV](http://datav.jiaminghi.com/) 不支持Vue3 Vite2.x，现部分代码用Vue3+TS重构。
-
-- [文档地址](https://datav-vue3.netlify.app)：https://datav-vue3.netlify.app
-
-- [Gitee地址](https://gitee.com/kjgl77/datav-vue3)：https://gitee.com/kjgl77/datav-vue3
-
-- [Github地址](https://github.com/vaemusic/datav-vue3)：https://github.com/vaemusic/datav-vue3
-
-- [Demo预览地址](https://datav-vue3-demo.netlify.app/)：https://datav-vue3-demo.netlify.app/
-
-- [Demo Gitee地址](https://gitee.com/kjgl77/electronic-file)：https://gitee.com/kjgl77/electronic-file
-
-- [Demo Github地址](https://github.com/vaemusic/electronic-file)：https://github.com/vaemusic/electronic-file
 
 ## 使用方法
 - 安装，此处使用pnpm工具，也可以yarn,npm等
 ```shell
-pnpm install @kjgl77/datav-vue3
+pnpm install @heroes2016/yike
 ```
 ### 全局引入
 
 ```ts
 // main.ts中全局引入
 import { createApp } from 'vue'
-import DataVVue3 from '@kjgl77/datav-vue3'
+import Yike from '@heroes2016/yike'
 
 const app = createApp(App)
 
-app.use(DataVVue3)
+app.use(Yike)
 app.mount('#app')
 ```
 引入后在.vue文件中可以直接使用
@@ -47,7 +31,7 @@ app.mount('#app')
 ```html
 <!-- 在.vue文件的script中import部分组件 -->
 <script lang="ts" setup>
-import { Decoration1, Decoration2 } from '@kjgl77/datav-vue3'
+import { Decoration1, Decoration2 } from '@heroes2016/yike'
 </script>
 <template>
   <!-- 引入之后就可以在vue的template中直接使用 -->
@@ -56,6 +40,4 @@ import { Decoration1, Decoration2 } from '@kjgl77/datav-vue3'
 </template>
 ```
 
-## 二次开发
 
-二次开发可见文档中[二次开发部分](https://datav-vue3.netlify.app/Guide/contribute.html)或[contribute](./packages/docs/docs/Guide/contribute.md)

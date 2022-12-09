@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 import VueJsx from '@vitejs/plugin-vue-jsx'
 import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import list from '../../../datav-vue3/list.json'
+import list from '../../../yike/list.json'
 import path from 'path'
 
 const BorderDecorationList = list.filter(item => item.children && item.children.length > 0)
@@ -57,7 +57,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/vaemusic/datav-vue3',
+        link: 'https://github.com/vaemusic/yike',
       },
     ],
     nav: [

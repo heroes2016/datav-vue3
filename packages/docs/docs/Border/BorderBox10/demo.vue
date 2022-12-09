@@ -9,5 +9,5 @@
 </template>
 
 <script setup lang="ts">
-import { BorderBox10 as DvBorderBox10 } from '@kjgl77/datav-vue3'
+import { BorderBox10 as DvBorderBox10 } from '@heroes2016/yike'
 </script>

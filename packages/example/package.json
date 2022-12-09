@@ -1,6 +1,6 @@
 {
-  "name": "@kjgl77/example",
-  "private": true,
+  "name": "@heroes2016/example",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,6 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@kjgl77/datav-vue3": "workspace:*"
+    "@heroes2016/yike": "workspace:*"
   }
 }

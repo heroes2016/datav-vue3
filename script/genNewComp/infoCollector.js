@@ -2,7 +2,7 @@ const { resolve } = require('path')
 const inquirer = require('inquirer')
 const fs = require('fs-extra')
 
-const listFilePath = '../../packages/datav-vue3/list.json'
+const listFilePath = '../../packages/yike/list.json'
 
 const RegxMap = {
   IS_COMP_NAME: /^[A-Z]/,
@@ -14,7 +14,7 @@ const kebabCase = string => string
   .replace(/[\s_]+/g, '-')
   .toLowerCase()
 
-module.exports = async() => {
+module.exports = async () => {
   const meta = await inquirer
     .prompt([
       {

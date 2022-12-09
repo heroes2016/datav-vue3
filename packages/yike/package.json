@@ -1,0 +1,63 @@
+{
+  "name": "@heroes2016/yike",
+  "version": "0.0.1",
+  "description": "vue3+vite",
+  "packageManager": "pnpm@6.32.3",
+  "author": "heroes2016 <4012856865@qq.com>",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue3"
+  ],
+  "homepage": "https://github.com/heroes2016/yike-vue3",
+  "main": "./dist/yike.es.js",
+  "module": "./dist/yike.es.js",
+  "types": "./dist/packages/yike/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/yike.es.js",
+      "import": "./dist/yike.es.js",
+      "types": "./dist/packages/yike/index.d.ts"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:lib": "vue-tsc --noEmit && vite build --config ../../build/lib.config.ts",
+    "lint": "eslint .",
+    "typecheck": "vue-tsc --noEmit",
+    "prepublish": "npm run build:lib"
+  },
+  "dependencies": {
+    "@jiaminghi/c-render": "^0.4.3",
+    "@jiaminghi/charts": "^0.2.18",
+    "@vueuse/core": "^9.1.0",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@jiaminghi/fs": "^0.1.1",
+    "@types/lodash-es": "^4.17.6",
+    "less": "^4.1.3",
+    "vite-plugin-dts": "^1.2.0",
+    "vite-plugin-libcss": "^1.0.5"
+  },
+  "eslintConfig": {
+    "extends": "@antfu"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heroes2016/yike-vue3"
+  },
+  "bugs": {
+    "url": "https://github.com/heroes2016/yike-vue3/issues"
+  }
+}

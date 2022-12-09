@@ -2,19 +2,19 @@
 
 [![Author](https://img.shields.io/badge/Author-kjgl77-red.svg "Author")](https://github.com/vaemusic "Author")
 
-[![LICENSE](https://img.shields.io/github/license/vaemusic/datav-vue3 "LICENSE")](https://github.com/vaemusic/datav-vue3/blob/master/LICENSE "LICENSE")
+[![LICENSE](https://img.shields.io/github/license/vaemusic/yike "LICENSE")](https://github.com/vaemusic/yike/blob/master/LICENSE "LICENSE")
 
-[![NPM](https://nodei.co/npm/@kjgl77/datav-vue3.png?mini=true)](https://www.npmjs.com/package/@kjgl77/datav-vue3)
+[![NPM](https://nodei.co/npm/@heroes2016/yike.png?mini=true)](https://www.npmjs.com/package/@heroes2016/yike)
 
 由于之前大佬写的 [DataV](http://datav.jiaminghi.com/) 不支持Vue3 Vite2.x，现部分代码用Vue3+TS重构。
 
-文档地址：https://datav-vue3.netlify.app
+文档地址：https://yike.netlify.app
 
-Gitee地址：https://gitee.com/kjgl77/datav-vue3
+Gitee地址：https://gitee.com/kjgl77/yike
 
-Github地址：https://github.com/vaemusic/datav-vue3
+Github地址：https://github.com/vaemusic/yike
 
-Demo预览地址：https://datav-vue3-demo.netlify.app/
+Demo预览地址：https://yike-demo.netlify.app/
 
 Demo Gitee地址：https://gitee.com/kjgl77/electronic-file
 
@@ -23,14 +23,14 @@ Demo Github地址：https://github.com/vaemusic/electronic-file
 ## 使用方法
 - 安装，此处使用pnpm工具，也可以yarn,npm等
 ```shell
-pnpm install @kjgl77/datav-vue3
+pnpm install @heroes2016/yike
 ```
 ## 全局引入
 
 ```js
 // main.ts中全局引入
 import { createApp } from 'vue'
-import DataVVue3 from '@kjgl77/datav-vue3'
+import DataVVue3 from '@heroes2016/yike'
 
 const app = createApp(App)
 
@@ -46,7 +46,7 @@ app.mount('#app')
 ```vue
 <!-- 在.vue文件的script中import部分组件 -->
 <script lang="ts" setup>
-import { Decoration1, Decoration2 } from '@kjgl77/datav-vue3'
+import { Decoration1, Decoration2 } from '@heroes2016/yike'
 </script>
 <template>
   <!-- 引入之后就可以在vue的template中直接使用 -->

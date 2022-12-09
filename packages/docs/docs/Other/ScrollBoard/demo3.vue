@@ -11,7 +11,8 @@
   </div>
 </template>
 <script lang="ts" setup>
-import type { ScrollBoard } from '@kjgl77/datav-vue3/index'
+import {reactive,ref} from 'vue'
+import type { ScrollBoard } from '@heroes2016/yike/index'
 const config = reactive({
   header: ['列1', '列2', '列3'],
   data: [
@@ -54,7 +55,7 @@ const clickHandler = (e: any) => {
   console.log(e)
 }
 
-const scrollBoard = ref<InstanceType<typeof ScrollBoard>>(null)
+const scrollBoard = ref<InstanceType<typeof ScrollBoard>>()
 
 const updateRows = () => {
   if (scrollBoard.value)
