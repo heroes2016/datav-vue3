@@ -8,7 +8,7 @@
     "build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
-  "author": "",
+  "author": "heroes2016",
   "license": "ISC",
   "devDependencies": {
     "unocss": "^0.45.8",

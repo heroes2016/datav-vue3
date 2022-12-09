@@ -1,7 +1,7 @@
 {
   "name": "@heroes2016/yike",
   "version": "1.0.0",
-  "description": "Datav for vue3+vite",
+  "description": "vue3+vite",
   "packageManager": "pnpm@6.32.3",
   "license": "MIT",
   "private": false,

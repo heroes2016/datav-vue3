@@ -46,7 +46,7 @@ importers:
       unplugin-auto-import: ^0.11.2
       vitepress: 1.0.0-alpha.13
     dependencies:
-      '@heroes2016/yike': link:../..
+      '@heroes2016/yike': link:../yike
     devDependencies:
       unocss: registry.npmmirror.com/unocss/0.45.30
       unplugin-auto-import: registry.npmmirror.com/unplugin-auto-import/0.11.5
@@ -56,7 +56,7 @@ importers:
     specifiers:
       '@heroes2016/yike': workspace:*
     dependencies:
-      '@heroes2016/yike': link:../..
+      '@heroes2016/yike': link:../yike
 
   packages/yike:
     specifiers:

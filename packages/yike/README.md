@@ -1,22 +1,11 @@
-# DataV Vue3+TS+Vite版
+# yike 组件库
 
-[![Author](https://img.shields.io/badge/Author-kjgl77-red.svg "Author")](https://github.com/vaemusic "Author")       [![LICENSE](https://img.shields.io/github/license/vaemusic/yike "LICENSE")](https://github.com/vaemusic/yike/blob/master/LICENSE "LICENSE")
+[![Author](https://img.shields.io/badge/Author-heroes2016-brightgreen "Author")](https://github.com/heroes2016 "Author") 
 
-[![NPM](https://nodei.co/npm/@heroes2016/yike.png?mini=true)](https://www.npmjs.com/package/@heroes2016/yike)
 
-由于之前大佬写的 [DataV](http://datav.jiaminghi.com/) 不支持Vue3 Vite2.x，现部分代码用Vue3+TS重构。
 
-[文档地址](https://yike.netlify.app)：https://yike.netlify.app
+[Github地址](https://github.com/heroes2016/yike-vue3)：https://github.com/heroes2016/yike-vue3
 
-[Gitee地址](https://gitee.com/kjgl77/yike)：https://gitee.com/kjgl77/yike
-
-[Github地址](https://github.com/vaemusic/yike)：https://github.com/vaemusic/yike
-
-[Demo预览地址](https://yike-demo.netlify.app/)：https://yike-demo.netlify.app/
-
-[Demo Gitee地址](https://gitee.com/kjgl77/electronic-file)：https://gitee.com/kjgl77/electronic-file
-
-[Demo Github地址](https://github.com/vaemusic/electronic-file)：https://github.com/vaemusic/electronic-file
 
 ## 使用方法
 - 安装，此处使用pnpm工具，也可以yarn,npm等
@@ -28,11 +17,11 @@ pnpm install @heroes2016/yike
 ```ts
 // main.ts中全局引入
 import { createApp } from 'vue'
-import DataVVue3 from '@heroes2016/yike'
+import Yike from '@heroes2016/yike'
 
 const app = createApp(App)
 
-app.use(DataVVue3)
+app.use(Yike)
 app.mount('#app')
 ```
 引入后在.vue文件中可以直接使用
