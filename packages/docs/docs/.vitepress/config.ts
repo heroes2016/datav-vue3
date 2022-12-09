@@ -42,9 +42,19 @@ const getOtherLinkList = ()=>{
   })
   return links
 }
+const getEchartsLinkList = ()=>{
+  const links: any[] = []  
+  OtherList?.forEach(item => {
+    links.push({
+      text: item.compZhName,
+      link: `/Other/${item.compName}/index`,
+    })
+  })
+  return links
+}
 
 export default defineConfig({
-  title: 'DataV - Vue3',
+  title: 'Yike - Vue3',
   markdown:{
     theme: {
       light: 'vitesse-light',
@@ -52,12 +62,12 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    siteTitle: 'DataV - Vue3',
+    siteTitle: 'Yike - Vue3',
     outlineTitle: '目录',
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/vaemusic/yike',
+        link: 'https://github.com/heroes2016/yike-vue3',
       },
     ],
     nav: [
@@ -86,6 +96,11 @@ export default defineConfig({
         text: '图表',
         collapsible: true,
         items: getOtherLinkList(),
+      },
+      {
+        text: 'ECharts图表',
+        collapsible: true,
+        items: getEchartsLinkList(),
       },
       {
         text: '边框',
