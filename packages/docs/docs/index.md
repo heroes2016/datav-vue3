@@ -2,21 +2,17 @@
 layout: home
 
 hero:
-  name: DataV - Vue3
-  text: 支持 Vue3 + Vite 的 DataV 组件库
+  name: yike - library - Vue3
+  text: 支持 Vue3 + Vite 的 yike 组件库
   actions:
     - theme: brand
       text: 快速开始
       link: /Guide/index
-    - theme: brand
-      text: Vue 2.x
-      link: http://datav.jiaminghi.com/
+   
     - theme: alt
       text: Github
-      link: https://github.com/vaemusic/yike
-    - theme: alt
-      text: Gitee
-      link: https://gitee.com/kjgl77/yike
+      link: https://github.com/heroes2016/yike-vue3
+    
 
 features:
   - icon: ⚡️

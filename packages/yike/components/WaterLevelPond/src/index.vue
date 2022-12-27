@@ -45,7 +45,7 @@
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { deepClone, deepMerge, uuid } from 'packages/yike/utils'
 import CRender from '@jiaminghi/c-render'
 
@@ -55,8 +55,26 @@ const props = defineProps({
 })
 const id = uuid()
 const waterPondLevel = ref(null)
-
-const state = reactive({
+interface IDefaultConfig {
+  data: Array<Number>
+  shape: string
+  waveNum: number
+  waveHeight: number
+  waveOpacity: number
+  colors: Array<string>
+  formatter: string
+}
+interface IState {
+  gradientId: string
+  defaultConfig: IDefaultConfig
+  mergedConfig: any
+  renderer: any
+  svgBorderGradient: Array<any>
+  details: string
+  waves: Array<any>
+  animation: boolean
+}
+const state = reactive<IState>({
   gradientId: `water-level-pond-${id}`,
 
   defaultConfig: {
@@ -174,7 +192,7 @@ function init() {
 }
 
 function initRender() {
-  state.renderer = new CRender(waterPondLevel.value)
+  state.renderer = new (CRender as any)(waterPondLevel.value)
 }
 
 function calcData() {
@@ -200,7 +218,7 @@ function calcSvgBorderGradient() {
 
   const colorOffsetGap = 100 / (colorNum - 1)
 
-  state.svgBorderGradient = colors.map((c, i) => [colorOffsetGap * i, c])
+  state.svgBorderGradient = colors.map((c: string, i: number) => [colorOffsetGap * i, c])
 }
 
 function calcDetails() {
@@ -221,7 +239,7 @@ function addWave() {
   const shapes = getWaveShapes()
   const style = getWaveStyle()
 
-  state.waves = shapes.map(shape => state.renderer.add({
+  state.waves = shapes.map((shape: any) => state.renderer.add({
     name: 'smoothline',
     animationFrame: 300,
     shape,
@@ -239,8 +257,8 @@ function getWaveShapes() {
 
   const pointXGap = w / waveNum / 2
 
-  return data.map((v) => {
-    let points = new Array(pointsNum).fill(0).map((foo, j) => {
+  return data.map((v: number) => {
+    let points: number[][] = new Array(pointsNum).fill(0).map((foo, j) => {
       const x = w - pointXGap * j
 
       const startY = (1 - v / 100) * h
@@ -256,7 +274,7 @@ function getWaveShapes() {
   })
 }
 
-function mergeOffset([x, y], [ox, oy]) {
+function mergeOffset([x, y]: number[], [ox, oy]: number[]) {
   return [x + ox, y + oy]
 }
 
@@ -273,7 +291,7 @@ function getWaveStyle() {
   }
 }
 
-function drawed({ shape: { points } }, { ctx, area }) {
+function drawed({ shape: { points } }: { shape: { points: any[] } }, { ctx, area }: { ctx: any; area: any }) {
   const firstPoint = points[0]
   const lastPoint = points.slice(-1)[0]
 
