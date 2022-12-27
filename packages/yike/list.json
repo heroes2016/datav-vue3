@@ -176,13 +176,6 @@
         "compZhName": "装饰12",
         "compDesc": "装饰12",
         "compClassName": "decoration12"
-      },
-      {
-        "compType": "Decoration",
-        "compName": "Decoration14",
-        "compZhName": "装饰14",
-        "compDesc": "默认：这是一个新组件",
-        "compClassName": "decoration14"
       }
     ]
   },

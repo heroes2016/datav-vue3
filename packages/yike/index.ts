@@ -30,7 +30,6 @@ import { Decoration9Plugin } from './components/Decoration9'
 import { Decoration10Plugin } from './components/Decoration10'
 import { Decoration11Plugin } from './components/Decoration11'
 import { Decoration12Plugin } from './components/Decoration12'
-import { Decoration14Plugin } from './components/Decoration14'
 import { BorderBox1Plugin } from './components/BorderBox1'
 import { BorderBox2Plugin } from './components/BorderBox2'
 import { BorderBox3Plugin } from './components/BorderBox3'
@@ -72,7 +71,6 @@ const DataVVue3Plugin: Plugin = {
     Decoration10Plugin.install?.(app)
     Decoration11Plugin.install?.(app)
     Decoration12Plugin.install?.(app)
-    Decoration14Plugin.install?.(app)
     BorderBox1Plugin.install?.(app)
     BorderBox2Plugin.install?.(app)
     BorderBox3Plugin.install?.(app)
@@ -116,7 +114,6 @@ export * from './components/Decoration9'
 export * from './components/Decoration10'
 export * from './components/Decoration11'
 export * from './components/Decoration12'
-export * from './components/Decoration14'
 export * from './components/BorderBox1'
 export * from './components/BorderBox2'
 export * from './components/BorderBox3'
